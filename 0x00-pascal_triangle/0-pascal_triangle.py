@@ -14,4 +14,6 @@ def pascal_triangle(n):
     return triangle
 
 # Example usage:
-print(pascal_triangle(5))
+triangle = pascal_triangle(5)
+for row in triangle:
+    print(row)

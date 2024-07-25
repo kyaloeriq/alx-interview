@@ -1,19 +1,15 @@
-def pascal_triangle(n):
-    if n <= 0:
-        return []
+#!/usr/bin/python3
+"""
+0-main
+"""
+pascal_triangle = __import__('0-pascal_triangle').pascal_triangle
 
-    triangle = [[1]]
+def print_triangle(triangle):
+    """
+    Print the triangle
+    """
+    for row in triangle:
+        print(row)
 
-    for i in range(1, n):
-        row = [1]
-        for j in range(1, i):
-            row.append(triangle[i-1][j-1] + triangle[i-1][j])
-        row.append(1)
-        triangle.append(row)
-
-    return triangle
-
-# Example usage:
-triangle = pascal_triangle(5)
-for row in triangle:
-    print(row)
+if __name__ == "__main__":
+    print_triangle(pascal_triangle(5))

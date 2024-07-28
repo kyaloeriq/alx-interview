@@ -1,10 +1,13 @@
 #!/usr/bin/python3
 """
-returns a list of lists of integers representing the Pascal’s triangle
+This module contains a function to generate Pascal's triangle.
 """
 
 
 def pascal_triangle(n):
+    """
+    Generates Pascal's triangle up to the nth row.
+    """
     if n <= 0:
         return []
 

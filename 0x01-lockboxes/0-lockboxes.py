@@ -7,7 +7,7 @@ Module provides a function to determine if all boxes can be opened.
 
 def canUnlockAll(boxes):
     """
-    Determine if all the boxes can be opened.
+    Determines if all the boxes can be opened.
     """
     n = len(boxes)
     unlocked = [False] * n
@@ -22,3 +22,4 @@ def canUnlockAll(boxes):
                 keys.append(key)
 
     return all(unlocked)
+

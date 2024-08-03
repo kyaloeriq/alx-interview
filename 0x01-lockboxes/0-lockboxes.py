@@ -22,4 +22,4 @@ def canUnlockAll(boxes):
                 keys.append(key)
 
 
-return all(unlocked)
+    return all(unlocked)

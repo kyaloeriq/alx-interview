@@ -21,5 +21,4 @@ def canUnlockAll(boxes):
                 unlocked[key] = True
                 keys.append(key)
 
-
     return all(unlocked)

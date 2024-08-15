@@ -22,6 +22,7 @@ def signal_handler(sig, frame):
 
 signal.signal(signal.SIGINT, signal_handler)
 
+
 try:
     for line in sys.stdin:
         line_count += 1
@@ -43,7 +44,7 @@ try:
                 status_codes[status_code] += 1
 
         except ValueError:
-            continue  # Skip lines where file_size or status_code is not an integer
+            continue  # Skip lines
 
         # Print the stats after every 10 lines
         if line_count % 10 == 0:

@@ -23,6 +23,7 @@ def signal_handler(sig, frame):
     print_stats()
     sys.exit(0)
 
+
 signal.signal(signal.SIGINT, signal_handler)
 
 

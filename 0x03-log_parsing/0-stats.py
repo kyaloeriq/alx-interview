@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+This script processes input line by line from stdin
+"""
 import sys
 import signal
 

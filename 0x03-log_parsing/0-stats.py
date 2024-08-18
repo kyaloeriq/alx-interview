@@ -57,3 +57,5 @@ try:
 except KeyboardInterrupt:
     print_stats()
     sys.exit(0)
+
+print_stats()

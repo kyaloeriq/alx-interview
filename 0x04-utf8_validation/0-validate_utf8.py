@@ -23,7 +23,7 @@ def validUTF8(data):
                 num_bytes = 2
             elif (byte >> 3) == 0b11110:  # 4-byte character
                 num_bytes = 3
-            elif (byte >> 7) != 0:  # 1-byte character (0xxxxxxx) should start with 0
+            elif (byte >> 7) != 0:
                 return False
         else:
             # Check if the byte is a continuation byte (10xxxxxx)

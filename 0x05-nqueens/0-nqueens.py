@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
 This program solves the N queens problem.
 
@@ -8,6 +8,7 @@ Usage: nqueens N
 """
 
 import sys
+
 
 def is_safe(board, row, col):
     """Check if it's safe to place a queen at board[row][col]."""

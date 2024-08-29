@@ -23,6 +23,7 @@ def is_safe(board, row, col):
             return False
     return True
 
+
 def solve_nqueens(board, col, solutions):
     """Use backtracking to solve the N queens problem."""
     if col == len(board):
@@ -39,31 +40,34 @@ def solve_nqueens(board, col, solutions):
             solve_nqueens(board, col + 1, solutions)
             board[i][col] = 0
 
+
 def print_solutions(solutions):
     """Print all the solutions."""
     for solution in solutions:
         print(solution)
+
 
 def main():
     """Main function to handle input and validate conditions."""
     if len(sys.argv) != 2:
         print("Usage: nqueens N")
         sys.exit(1)
-    
+
     try:
         N = int(sys.argv[1])
     except ValueError:
         print("N must be a number")
         sys.exit(1)
-    
+
     if N < 4:
         print("N must be at least 4")
         sys.exit(1)
-    
+
     board = [[0 for _ in range(N)] for _ in range(N)]
     solutions = []
     solve_nqueens(board, 0, solutions)
     print_solutions(solutions)
+
 
 if __name__ == "__main__":
     main()

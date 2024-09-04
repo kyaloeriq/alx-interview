@@ -9,7 +9,7 @@
 const axios = require('axios');
 
 // Function to get characters based on Movie ID
-async function getCharacters(movieId) {
+async function getCharacters (movieId) {
   // SWAPI base URL
   const baseUrl = `https://swapi.dev/api/films/${movieId}/`;
 

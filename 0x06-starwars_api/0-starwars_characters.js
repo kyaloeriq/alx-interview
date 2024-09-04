@@ -1,10 +1,6 @@
-#!/usr/bin/env python3
+#!/usr/bin/node
 """
-This script prints all characters of a Star Wars movie.
-The first positional argument passed is the Movie ID.
-Example: 3 = "Return of the Jedi"
-It displays one character name per line in the same order as the "characters" list in the /films/ endpoint.
-You must use the Star Wars API.
+This script prints all characters of a Star Wars movie
 """
 
 import sys

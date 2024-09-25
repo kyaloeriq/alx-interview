@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
 island_perimeter function to calculate the perimeter of the island.
 """

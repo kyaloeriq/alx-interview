@@ -5,8 +5,9 @@ Maria and Ben are playing a game where they choose prime numbers from a set and
 remove their multiples. The player who cannot make a move loses.
 """
 
+
 def sieve_of_eratosthenes(max_n):
-    """Generates a list of primes up to max_n using the Sieve of Eratosthenes."""
+    """Generates a list of primes using the Sieve of Eratosthenes."""
     sieve = [True] * (max_n + 1)
     sieve[0] = sieve[1] = False  # 0 and 1 are not prime numbers
     for start in range(2, int(max_n ** 0.5) + 1):
@@ -15,14 +16,15 @@ def sieve_of_eratosthenes(max_n):
                 sieve[multiple] = False
     return sieve
 
+
 def count_primes_up_to(n, prime_flags):
     """Counts how many primes are <= n using the precomputed sieve."""
     return sum(prime_flags[:n + 1])
 
+
 def isWinner(x, nums):
     """
     Determines the winner of the game.
-    
     Args:
         x (int): The number of rounds.
         nums (list): An array of integers representing n for each round.
@@ -36,7 +38,6 @@ def isWinner(x, nums):
 
     max_n = max(nums)
     prime_flags = sieve_of_eratosthenes(max_n)
-    
     # Track the number of wins for Maria and Ben
     maria_wins = 0
     ben_wins = 0

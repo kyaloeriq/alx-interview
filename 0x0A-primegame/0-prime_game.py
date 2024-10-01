@@ -41,16 +41,13 @@ def isWinner(x, nums):
     # Track the number of wins for Maria and Ben
     maria_wins = 0
     ben_wins = 0
-    
     for n in nums:
         prime_count = count_primes_up_to(n, prime_flags)
-        
         # If the number of primes is odd, Maria wins; if even, Ben wins
         if prime_count % 2 == 0:
             ben_wins += 1
         else:
             maria_wins += 1
-    
     if maria_wins > ben_wins:
         return "Maria"
     elif ben_wins > maria_wins:
